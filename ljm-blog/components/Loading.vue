@@ -4,8 +4,8 @@
       <div v-for="item in 4" :key="`out${item}`">
       </div>
     </div>
-    <h3 class="title" v-if="$frontmatter.home">Welcome {{$site.title}}</h3>
-    <p class="description">Just wait a minute!</p>
+    <!-- <h3 class="title" v-if="$frontmatter.home">欢迎 {{$site.title}}</h3>
+    <p class="description">稍等一下!</p> -->
   </div>
 </template>
 

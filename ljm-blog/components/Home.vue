@@ -2,12 +2,11 @@
   <div class="home" :class="recoShow?'reco-show': 'reco-hide'">
     <div class="hero">
       <img v-if="data.heroImage" :style="heroImageStyle" :src="$withBase(data.heroImage)" alt="hero">
-
-      <h1 v-if="data.isShowTitleInHome !== false">{{ data.heroText || $title || '午后南杂' }}</h1>
+      <h1 v-if="data.isShowTitleInHome !== false">{{ data.heroText || $title || 'alix' }}</h1>
 
       <p class="description">{{ data.tagline || $description || 'Welcome to your vuePress-theme-reco site' }}</p>
       <p class="huawei" v-if="$themeConfig.huawei === true"><i class="iconfont reco-huawei" style="color: #fc2d38"></i>&nbsp;&nbsp;&nbsp;华为，为中华而为之！</p>
-
+     
       <p class="action" v-if="data.actionText && data.actionLink">
         <NavLink class="action-button" :item="actionLink"/>
       </p>
@@ -90,10 +89,14 @@ export default {
 };
 </script>
 
+<style scoped>
+
+</style>
 <style lang="stylus">
 @require '../styles/loadMixin.styl'
 
 .home {
+  position: relative;
   padding: $navbarHeight 2rem 0;
   max-width: 960px;
   margin: 0px auto;

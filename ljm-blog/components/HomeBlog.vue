@@ -1,8 +1,8 @@
 <template>
   <div class="home-blog" :class="recoShow?'reco-show': 'reco-hide'">
      <div class="hero" :style="{background: `url(${$frontmatter.bgImage ? $withBase($frontmatter.bgImage) : require('../images/home-bg.jpg')}) center/cover no-repeat`, ...bgImageStyle}">
-      <h1>{{ data.heroText || $title || '午后南杂' }}</h1>
-
+      <h1>{{ data.heroText || $title || 'alix' }}</h1>
+      
       <p class="description">{{ data.tagline || $description || 'Welcome to your vuePress-theme-reco site' }}</p>
       <p class="huawei" v-if="$themeConfig.huawei === true"><i class="iconfont reco-huawei" style="color: #fc2d38"></i>&nbsp;&nbsp;&nbsp;华为，为中华而为之！</p>
     </div>

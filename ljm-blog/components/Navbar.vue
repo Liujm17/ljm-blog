@@ -21,7 +21,9 @@
       :style="linksWrapMaxWidth ? {
         'max-width': linksWrapMaxWidth + 'px'
       } : {}">
-
+      <!-- 留言板 -->
+      <!-- <Message /> -->
+      <Music />
       <Theme v-if="hasThemes" />
       <ScreenFull />
       <AlgoliaSearchBox
@@ -40,9 +42,11 @@ import SidebarButton from '@theme/components/SidebarButton.vue'
 import NavLinks from '@theme/components/NavLinks.vue'
 import Theme from '@theme/components/Theme'
 import ScreenFull from '@theme/components/ScreenFull'
+import Music from '@theme/components/music'
+import Message from './message.vue'
 
 export default {
-  components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox, Theme, ScreenFull },
+  components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox, Theme, ScreenFull,Music ,Message},
 
   data () {
     return {
@@ -128,4 +132,5 @@ $navbar-horizontal-padding = 1.5rem
       display none
     .links
       padding-left 1.5rem
+      
 </style>

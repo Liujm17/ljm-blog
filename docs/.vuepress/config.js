@@ -1,20 +1,13 @@
 const themeConfig = require('./config/theme/')
+const head = require('./config/head.js');
 
 module.exports = {
   base: '/',
-  title: "ljm",
-  description: '愿你有一个灿烂的前程   愿你有情人终成眷属   愿你在尘世获得幸福',
+  title: "Liu Jiaming",
+  description: '今天辛苦啦，静下心来学习吧!',
   dest: 'public',
-  head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
-    
-    // add jquert and fancybox
-    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
-    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
-    ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }]
-  ],
-  theme: 'reco',
+  head,
+  theme: require.resolve('../../ljm-blog'), 
   themeConfig,
   markdown: {
     lineNumbers: true

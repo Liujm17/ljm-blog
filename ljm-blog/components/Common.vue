@@ -4,6 +4,7 @@
     :class="pageClasses"
     @touchstart="onTouchStart"
     @touchend="onTouchEnd">
+     <!-- <Message v-if="!firstLoad"></Message> -->
     <transition name="fade">
       <Loading v-if="firstLoad"></Loading>
       <Password v-else-if="!isHasKey"></Password>
@@ -26,7 +27,6 @@
             name="sidebar-bottom"
             slot="bottom"/>
         </Sidebar>  
-
         <Password v-if="!isHasPageKey" :isPage="true"></Password>
         <div v-else>
           <slot></slot>
@@ -47,10 +47,11 @@ import Password from '@theme/components/Password'
 import Loading from '@theme/components/Loading'
 import Valine from '@theme/components/Valine/'
 import BackToTop from "@theme/components/BackToTop"
+import Message from '@theme/components/message'
 import { setTimeout } from 'timers';
 
 export default {
-  components: { Sidebar, Navbar, Password, Valine, BackToTop, Loading },
+  components: { Sidebar, Navbar, Password, Valine, BackToTop, Loading,Message },
 
   props: ['sidebar', 'isComment'],
 
