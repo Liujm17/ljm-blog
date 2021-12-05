@@ -5,7 +5,7 @@ module.exports = [
     icon: 'reco-message',
     items: [
       { text: '关于', link: '/views/about/', icon: 'reco-account' },
-      { text: 'GitHub', link: 'https://github.com/ljm960517', icon: 'reco-github' },
+      { text: 'GitHub', link: 'https://github.com/Liujm17', icon: 'reco-github' },
     ]
   }
 ]

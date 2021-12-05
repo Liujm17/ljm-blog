@@ -5,7 +5,7 @@ module.exports = {
   base: '/',
   title: "Liu Jiaming",
   description: '今天辛苦啦，静下心来学习吧!',
-  dest: 'public',
+  dest: 'dist2', //打包路径
   head,
   theme: require.resolve('../../ljm-blog'), 
   themeConfig,

@@ -23,7 +23,7 @@ module.exports = {
   // 作者
   author: 'Liu Jiaming',
   // 备案号
-  record: '5163406',
+  record: 'xxxxxx',
   // 项目开始时间
   startYear: '2020',
   search: true,
